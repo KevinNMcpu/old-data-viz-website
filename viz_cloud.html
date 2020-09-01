@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Kevin's WxViz - Home</title>
+  <title>Kevin's WxViz - Cloudiness</title>
 
   <!-- Bootstrap core CSS -->
   <link href="https://startbootstrap.github.io/startbootstrap-simple-sidebar/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,21 +60,11 @@
 
       <div class="d-flex" id="wrapper">
 
-        <!-- Sidebar -->
-        <div class="bg-light border-right" id="sidebar-wrapper">
-          <div class="list-group list-group-flush">
-            <a href="..\WebVisualizations\viz_temp.html" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\temp.jpg" width="200" height="200"></img></a>
-            <a href="..\WebVisualizations\viz_humid.html" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\humid.jpg" width="200" height="200"></img></a>
-            <a href="..\WebVisualizations\viz_cloud.html" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\cloud.jpg" width="200" height="200"></img></a>
-            <a href="..\WebVisualizations\viz_wind.html" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\wind.jpg" width="200" height="200"></img></a>
-          </div>
-        </div>
-    
 
       <div class="container-fluid">
-        <h1 class="mt-4">Weather Visualization - Latitudes</h1>
-        <p>Welcome to my project's web page. The purpose of this project was to analyze and visualize the effect latitude has on four weather metrics- Temperature, Humidity, Cloudiness and Wind Speed  </p>
-        <p>I randomly picked 500 locations on the planet by selecting randomly generating longitude and latitude, then used the very helpful Python library <a href="https://github.com/wingchen/citipy">citiypy</a>. Some data wrangling was then used to weed out duplicates as needed. Weather data was pulled from <a href="https://openweathermap.org/">OpenWeather. <a href="https://matplotlib.org/">Matplotlib</a> was then used to do the visualizations in a <a href="https://jupyter.org/">Jupyter Notebook.</a></a></p>
+        <h1 class="mt-4">Latitude vs. Cloudiness</h1>
+        <p><img src="..\WebVisualizations\visualizations\cloud.jpg"></img></p>
+        <p>Seems like a pretty random scattering. The correlation along 0%, 20%, 40%, 75% and 100% is probably due to how OpenWeather reports a numeric value for a subjective cloud report. I'm assuming that an "Overcast" cloudiness report is in their system as "100%" while "partly cloudy" is a "40%." Some weather stations may have a more mathematically objective way of reporting how many clouds there are which is why not all weather stations are on these lines.</p>
       </div>
     </div>
     <!-- /#page-content-wrapper -->

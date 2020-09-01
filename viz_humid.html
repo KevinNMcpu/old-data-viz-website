@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Kevin's WxViz - Home</title>
+  <title>Kevin's WxViz - Humidity</title>
 
   <!-- Bootstrap core CSS -->
   <link href="https://startbootstrap.github.io/startbootstrap-simple-sidebar/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,21 +60,13 @@
 
       <div class="d-flex" id="wrapper">
 
-        <!-- Sidebar -->
-        <div class="bg-light border-right" id="sidebar-wrapper">
-          <div class="list-group list-group-flush">
-            <a href="..\WebVisualizations\viz_temp.html" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\temp.jpg" width="200" height="200"></img></a>
-            <a href="..\WebVisualizations\viz_humid.html" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\humid.jpg" width="200" height="200"></img></a>
-            <a href="..\WebVisualizations\viz_cloud.html" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\cloud.jpg" width="200" height="200"></img></a>
-            <a href="..\WebVisualizations\viz_wind.html" class="list-group-item list-group-item-action bg-light"><img src="..\WebVisualizations\visualizations\wind.jpg" width="200" height="200"></img></a>
-          </div>
-        </div>
+
     
 
       <div class="container-fluid">
-        <h1 class="mt-4">Weather Visualization - Latitudes</h1>
-        <p>Welcome to my project's web page. The purpose of this project was to analyze and visualize the effect latitude has on four weather metrics- Temperature, Humidity, Cloudiness and Wind Speed  </p>
-        <p>I randomly picked 500 locations on the planet by selecting randomly generating longitude and latitude, then used the very helpful Python library <a href="https://github.com/wingchen/citipy">citiypy</a>. Some data wrangling was then used to weed out duplicates as needed. Weather data was pulled from <a href="https://openweathermap.org/">OpenWeather. <a href="https://matplotlib.org/">Matplotlib</a> was then used to do the visualizations in a <a href="https://jupyter.org/">Jupyter Notebook.</a></a></p>
+        <h1 class="mt-4">Latitude vs. Humidity</h1>
+        <p><img src="..\WebVisualizations\visualizations\humid.jpg"></img></p>
+        <p>Not seeing much correlation here, this may be more geographically dependent (proxmity to water, etc.). Interestingly there is a wider range of humidity along the tropics (S° 23 and N° 23 approximately).</p>
       </div>
     </div>
     <!-- /#page-content-wrapper -->
